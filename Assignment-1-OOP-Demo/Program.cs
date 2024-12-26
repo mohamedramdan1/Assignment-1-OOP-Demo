@@ -254,19 +254,19 @@ namespace Assignment_1_OOP_Demo
             #endregion
 
             #region Struct
-            //point p01; // create varable in stck not refrences bocouse struct is value type
+            //Point1Demo p01; // create varable in stck not refrences bocouse struct is value type
             //p01.x = 10;
             //p01.y = 20;
             //Console.WriteLine(p01.x);
             //Console.WriteLine(p01.y); // but we dont intalize the var like this we use constructor that
             // in struct
-            //p01 = new point();  // the new take instance of constructor in struct and will take the defuilt here 
+            //p01 = new Point1Demo();  // the new take instance of constructor in struct and will take the defuilt here 
             //                    // becouse no paramter in this poubt() it is  paramter less constructor
             //                    // it is take all attribute and give it defult value
             //Console.WriteLine(p01.x);//0
             //Console.WriteLine(p01.y);//0
 
-            //p01 = new point(2,7); // use the second constructor in the struct point()
+            //p01 = new Point1Demo(2,7); // use the second constructor in the struct point()
             //Console.WriteLine(p01.x);//2
             //Console.WriteLine(p01.y);//7                     
 
@@ -366,6 +366,10 @@ namespace Assignment_1_OOP_Demo
             //{
             //    Console.WriteLine($"{result} is not a primary color.");
             //}
+            #endregion
+
+            #region Q5
+
             #endregion
             #endregion
         }
