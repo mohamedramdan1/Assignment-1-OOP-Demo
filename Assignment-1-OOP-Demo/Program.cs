@@ -27,6 +27,11 @@ namespace Assignment_1_OOP_Demo
         {
             Admin = 10 , Viwer = 20 , Editor = 30
         }
+        [Flags]
+        enum Pirmisions
+        {
+            Delete = 1 , Excute = 2 , Read= 4 , Write = 8
+        }
         enum WeekDays
         {
             Monday,
@@ -37,10 +42,12 @@ namespace Assignment_1_OOP_Demo
             Saturday,
             Sunday
         }
-        [Flags]
-        enum Pirmisions
+        enum Season
         {
-            Delete = 1 , Excute = 2 , Read= 4 , Write = 8
+            Spring,
+            Summer,
+            Autumn,
+            Winter
         }
         public static void DosomecodeWithoutprotectcode()
         {
@@ -62,7 +69,6 @@ namespace Assignment_1_OOP_Demo
                 Console.WriteLine(ex.Message);
             }
         }
-
         public static void DosomecodeWithprotectcode()
         {
 
@@ -271,6 +277,35 @@ namespace Assignment_1_OOP_Demo
             //    Console.Write($"{days[i]} ");   
             //}
             //Console.WriteLine(" ");
+            #endregion
+
+            #region Q2
+            //Console.Write("Enter a season : ");
+            //string season = Console.ReadLine();
+            //Season result;
+            //while (!Enum.TryParse<Season>(season, true, out  result) || int.TryParse(season, out _))// out_ mean if any number
+            //{
+            //    Console.Write("Invalid input. Please enter a valid season name : ");
+            //    season = Console.ReadLine();
+            //}
+            //if (result == Season.Spring)
+            //{
+            //    Console.WriteLine("Spring : March to May");
+            //}
+            //else if (result == Season.Summer)
+            //{
+            //    Console.WriteLine("Summer : June to August");
+            //}
+            //else if (result == Season.Autumn)
+            //{
+            //    Console.WriteLine("Autumn : September to November");
+            //}
+            //else if (result == Season.Winter)
+            //{
+            //    Console.WriteLine("Winter : December to February");
+            //}
+           
+
             #endregion
             #endregion
         }
