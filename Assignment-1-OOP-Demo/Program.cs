@@ -6,15 +6,15 @@ namespace Assignment_1_OOP_Demo
 {
     internal class Program
     {
-        class Employee
-        {
-            public string Name;
-            public int Age;
-            public decimal Salary;
-            public Gender gender;// male , female / 0 - 1
-            public Roles roles;
-            public Pirmisions primisions;
-        }
+        //class Employee
+        //{
+        //    public string Name;
+        //    public int Age;
+        //    public decimal Salary;
+        //    public Gender gender;// male , female / 0 - 1
+        //    public Roles roles;
+        //    public Pirmisions primisions;
+        //}
         enum Gender
         {
             male  , female=3
@@ -27,11 +27,33 @@ namespace Assignment_1_OOP_Demo
         {
             Admin = 10 , Viwer = 20 , Editor = 30
         }
-
         [Flags]
-        enum Pirmisions
+        enum Permissions
         {
             Delete = 1 , Excute = 2 , Read= 4 , Write = 8
+        }
+        enum WeekDays
+        {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
+        }
+        enum Season
+        {
+            Spring,
+            Summer,
+            Autumn,
+            Winter
+        }
+        enum Color
+        {
+            Red,
+            Green,
+            Blue
         }
         public static void DosomecodeWithoutprotectcode()
         {
@@ -53,7 +75,6 @@ namespace Assignment_1_OOP_Demo
                 Console.WriteLine(ex.Message);
             }
         }
-
         public static void DosomecodeWithprotectcode()
         {
 
@@ -81,6 +102,12 @@ namespace Assignment_1_OOP_Demo
                 numbers[10] = 100;
 
             }
+        }
+        public static double Distance(Point p01, Point p02)
+        {
+            double dx = p02.X - p01.X;
+            double dy = p02.Y - p01.Y;
+            return Math.Sqrt(dx * dx + dy * dy);
         }
         static void Main(string[] args)
         {
@@ -233,23 +260,154 @@ namespace Assignment_1_OOP_Demo
             #endregion
 
             #region Struct
-            //point p01; // create varable in stck not refrences bocouse struct is value type
+            //Point1Demo p01; // create varable in stck not refrences bocouse struct is value type
             //p01.x = 10;
             //p01.y = 20;
             //Console.WriteLine(p01.x);
             //Console.WriteLine(p01.y); // but we dont intalize the var like this we use constructor that
-                                        // in struct
-            //p01 = new point();  // the new take instance of constructor in struct and will take the defuilt here 
+            // in struct
+            //p01 = new Point1Demo();  // the new take instance of constructor in struct and will take the defuilt here 
             //                    // becouse no paramter in this poubt() it is  paramter less constructor
             //                    // it is take all attribute and give it defult value
             //Console.WriteLine(p01.x);//0
             //Console.WriteLine(p01.y);//0
 
-            //p01 = new point(2,7); // use the second constructor in the struct point()
+            //p01 = new Point1Demo(2,7); // use the second constructor in the struct point()
             //Console.WriteLine(p01.x);//2
             //Console.WriteLine(p01.y);//7                     
 
             //Console.WriteLine(p01);
+            #endregion
+            #endregion
+
+            #region Assignment
+            #region Q1
+            //Console.Write("Weekdays is : "); 
+            //WeekDays[] days = (WeekDays[])Enum.GetValues(typeof(WeekDays));
+            //for (int i = 0; i <days.Length ; i++)
+            //{
+            //    Console.Write($"{days[i]} ");   
+            //}
+            //Console.WriteLine(" ");
+            #endregion
+
+            #region Q2
+            //Console.Write("Enter a season : ");
+            //string season = Console.ReadLine();
+            //Season result;
+            //while (!Enum.TryParse<Season>(season, true, out  result) || int.TryParse(season, out _))// out_ mean if any number
+            //{
+            //    Console.Write("Invalid input. Please enter a valid season name : ");
+            //    season = Console.ReadLine();
+            //}
+            //if (result == Season.Spring)
+            //{
+            //    Console.WriteLine("Spring : March to May");
+            //}
+            //else if (result == Season.Summer)
+            //{
+            //    Console.WriteLine("Summer : June to August");
+            //}
+            //else if (result == Season.Autumn)
+            //{
+            //    Console.WriteLine("Autumn : September to November");
+            //}
+            //else if (result == Season.Winter)
+            //{
+            //    Console.WriteLine("Winter : December to February");
+            //}
+
+
+            #endregion
+
+            #region Q3
+            //Permissions permissions = Permissions.Delete;
+            //Console.WriteLine($"The permissions old is : {permissions}");
+            //Console.WriteLine(" ");
+            //permissions = permissions | Permissions.Excute;
+            //permissions = permissions | Permissions.Read;
+            ////permissions = permissions | Permissions.Write;
+            //Console.WriteLine($"The all permissions added is : {permissions}");
+            //if ((permissions & Permissions.Write) == Permissions.Write) 
+            //{
+            //    Console.WriteLine(" ");
+            //    Console.WriteLine("the permissions Write is find");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(" ");
+            //    Console.WriteLine("User does not have Write permission.");
+
+            //    permissions = permissions ^ Permissions.Write;
+            //}
+            //Console.WriteLine(" ");
+            //Console.WriteLine($"The all permissions added After check and added : {permissions}");
+
+            #endregion
+
+            #region Q4
+            //Console.Write("Enter a color (Red, Green, Blue) : ");
+            //string color = Console.ReadLine();
+            //Color result;
+            //while (!Enum.TryParse<Color>(color, true, out result) || int.TryParse(color, out _))// out_ mean if any number
+            //{
+            //    Console.Write("Invalid input. Please enter a valid Color name (Red, Green, Blue) : ");
+            //    color = Console.ReadLine();
+            //}
+            //bool isPrimaryColor = false;
+            //Color[] Col = (Color[])Enum.GetValues(typeof(Color));
+            //for (int i = 0; i < Col.Length; i++)
+            //{
+            //    if (Col[i] == result)
+            //    {
+            //        isPrimaryColor = true;
+            //        break;
+            //    }
+            //}
+            //if (isPrimaryColor)
+            //{
+            //    Console.WriteLine($"{result} is a primary color.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{result} is not a primary color.");
+            //}
+            #endregion
+
+            #region Q5
+            //Console.Write("Enter X [x1] coordinate of the first point : ");
+            //double x1;
+            //while (!double.TryParse(Console.ReadLine(), out x1))
+            //{
+            //    Console.Write("invalid input enter the X1 correct : ");
+            //}
+            //Console.Write("Enter Y [y1] coordinate of the first point : ");
+            //double y1;
+            //while (!double.TryParse(Console.ReadLine(), out y1))
+            //{
+            //    Console.Write("invalid input enter the Y1 correct : ");
+            //}
+
+            //Point p01 = new Point(x1, y1);
+
+            //Console.Write("Enter X [x2] coordinate of the second point : ");
+            //double x2;
+            //while (!double.TryParse(Console.ReadLine(), out x2))
+            //{
+            //    Console.Write("invalid input enter the X2 correct : ");
+            //}
+            //Console.Write("Enter Y [y2] coordinate of the second point : ");
+            //double y2;
+            //while (!double.TryParse(Console.ReadLine(), out y2))
+            //{
+            //    Console.Write("invalid input enter the Y correct : ");
+            //}
+
+            //Point p02 = new Point(x2, y2);
+
+            //Console.WriteLine(" ");
+            //double res = Distance(p01, p02);
+            //Console.WriteLine($"The distance between the two points is : {res} ");
             #endregion
             #endregion
         }
