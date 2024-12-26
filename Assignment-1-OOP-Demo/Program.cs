@@ -351,27 +351,10 @@ namespace Assignment_1_OOP_Demo
             //Color result;
             //while (!Enum.TryParse<Color>(color, true, out result) || int.TryParse(color, out _))// out_ mean if any number
             //{
-            //    Console.Write("Invalid input. Please enter a valid Color name (Red, Green, Blue) : ");
+            //    Console.Write($"color is not a primary color.. Please enter a valid Color name (Red, Green, Blue) : ");
             //    color = Console.ReadLine();
             //}
-            //bool isPrimaryColor = false;
-            //Color[] Col = (Color[])Enum.GetValues(typeof(Color));
-            //for (int i = 0; i < Col.Length; i++)
-            //{
-            //    if (Col[i] == result)
-            //    {
-            //        isPrimaryColor = true;
-            //        break;
-            //    }
-            //}
-            //if (isPrimaryColor)
-            //{
-            //    Console.WriteLine($"{result} is a primary color.");
-            //}
-            //else
-            //{
-            //    Console.WriteLine($"{result} is not a primary color.");
-            //}
+            //Console.WriteLine($"{result} is a primary color.");
             #endregion
 
             #region Q5
