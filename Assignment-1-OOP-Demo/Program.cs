@@ -351,7 +351,7 @@ namespace Assignment_1_OOP_Demo
             //Color result;
             //while (!Enum.TryParse<Color>(color, true, out result) || int.TryParse(color, out _))// out_ mean if any number
             //{
-            //    Console.Write("Invalid input. Please enter a valid Color name (Red, Green, Blue) : ");
+            //    Console.Write($"color is not a primary color.. Please enter a valid Color name (Red, Green, Blue) : ");
             //    color = Console.ReadLine();
             //}
             //Console.WriteLine($"{result} is a primary color.");
