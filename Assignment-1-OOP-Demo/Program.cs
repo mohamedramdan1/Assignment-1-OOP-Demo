@@ -49,6 +49,12 @@ namespace Assignment_1_OOP_Demo
             Autumn,
             Winter
         }
+        enum Color
+        {
+            Red,
+            Green,
+            Blue
+        }
         public static void DosomecodeWithoutprotectcode()
         {
             try
@@ -331,6 +337,35 @@ namespace Assignment_1_OOP_Demo
             //Console.WriteLine(" ");
             //Console.WriteLine($"The all permissions added After check and added : {permissions}");
 
+            #endregion
+
+            #region Q4
+            //Console.Write("Enter a color (Red, Green, Blue) : ");
+            //string color = Console.ReadLine();
+            //Color result;
+            //while (!Enum.TryParse<Color>(color, true, out result) || int.TryParse(color, out _))// out_ mean if any number
+            //{
+            //    Console.Write("Invalid input. Please enter a valid Color name (Red, Green, Blue) : ");
+            //    color = Console.ReadLine();
+            //}
+            //bool isPrimaryColor = false;
+            //Color[] Col = (Color[])Enum.GetValues(typeof(Color));
+            //for (int i = 0; i < Col.Length; i++)
+            //{
+            //    if (Col[i] == result)
+            //    {
+            //        isPrimaryColor = true;
+            //        break;
+            //    }
+            //}
+            //if (isPrimaryColor)
+            //{
+            //    Console.WriteLine($"{result} is a primary color.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{result} is not a primary color.");
+            //}
             #endregion
             #endregion
         }
