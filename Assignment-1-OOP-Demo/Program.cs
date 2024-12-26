@@ -27,7 +27,16 @@ namespace Assignment_1_OOP_Demo
         {
             Admin = 10 , Viwer = 20 , Editor = 30
         }
-
+        enum WeekDays
+        {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
+        }
         [Flags]
         enum Pirmisions
         {
@@ -238,7 +247,7 @@ namespace Assignment_1_OOP_Demo
             //p01.y = 20;
             //Console.WriteLine(p01.x);
             //Console.WriteLine(p01.y); // but we dont intalize the var like this we use constructor that
-                                        // in struct
+            // in struct
             //p01 = new point();  // the new take instance of constructor in struct and will take the defuilt here 
             //                    // becouse no paramter in this poubt() it is  paramter less constructor
             //                    // it is take all attribute and give it defult value
@@ -251,7 +260,19 @@ namespace Assignment_1_OOP_Demo
 
             //Console.WriteLine(p01);
             #endregion
-            #endregion 
+            #endregion
+
+            #region Assignment
+            #region Q1
+            //Console.Write("Weekdays is : "); 
+            //WeekDays[] days = (WeekDays[])Enum.GetValues(typeof(WeekDays));
+            //for (int i = 0; i <days.Length ; i++)
+            //{
+            //    Console.Write($"{days[i]} ");   
+            //}
+            //Console.WriteLine(" ");
+            #endregion
+            #endregion
         }
     }
 }
