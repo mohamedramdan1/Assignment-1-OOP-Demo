@@ -402,6 +402,7 @@ namespace Assignment_1_OOP_Demo
             //{
             //    Console.Write("invalid input enter the Y correct : ");
             //}
+
             //Point p02 = new Point(x2, y2);
 
             //Console.WriteLine(" ");
