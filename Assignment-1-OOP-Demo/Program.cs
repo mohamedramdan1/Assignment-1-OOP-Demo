@@ -103,6 +103,12 @@ namespace Assignment_1_OOP_Demo
 
             }
         }
+        public static double Distance(Point p01, Point p02)
+        {
+            double dx = p02.X - p01.X;
+            double dy = p02.Y - p01.Y;
+            return Math.Sqrt(dx * dx + dy * dy);
+        }
         static void Main(string[] args)
         {
             #region Demo
@@ -369,7 +375,38 @@ namespace Assignment_1_OOP_Demo
             #endregion
 
             #region Q5
+            //Console.Write("Enter X [x1] coordinate of the first point : ");
+            //double x1;
+            //while (!double.TryParse(Console.ReadLine(), out x1))
+            //{
+            //    Console.Write("invalid input enter the X1 correct : ");
+            //}
+            //Console.Write("Enter Y [y1] coordinate of the first point : ");
+            //double y1;
+            //while (!double.TryParse(Console.ReadLine(), out y1))
+            //{
+            //    Console.Write("invalid input enter the Y1 correct : ");
+            //}
 
+            //Point p01 = new Point(x1, y1);
+
+            //Console.Write("Enter X [x2] coordinate of the second point : ");
+            //double x2;
+            //while (!double.TryParse(Console.ReadLine(), out x2))
+            //{
+            //    Console.Write("invalid input enter the X2 correct : ");
+            //}
+            //Console.Write("Enter Y [y2] coordinate of the second point : ");
+            //double y2;
+            //while (!double.TryParse(Console.ReadLine(), out y2))
+            //{
+            //    Console.Write("invalid input enter the Y correct : ");
+            //}
+            //Point p02 = new Point(x2, y2);
+
+            //Console.WriteLine(" ");
+            //double res = Distance(p01, p02);
+            //Console.WriteLine($"The distance between the two points is : {res} ");
             #endregion
             #endregion
         }
