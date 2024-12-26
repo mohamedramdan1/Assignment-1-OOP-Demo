@@ -6,15 +6,15 @@ namespace Assignment_1_OOP_Demo
 {
     internal class Program
     {
-        class Employee
-        {
-            public string Name;
-            public int Age;
-            public decimal Salary;
-            public Gender gender;// male , female / 0 - 1
-            public Roles roles;
-            public Pirmisions primisions;
-        }
+        //class Employee
+        //{
+        //    public string Name;
+        //    public int Age;
+        //    public decimal Salary;
+        //    public Gender gender;// male , female / 0 - 1
+        //    public Roles roles;
+        //    public Pirmisions primisions;
+        //}
         enum Gender
         {
             male  , female=3
@@ -28,7 +28,7 @@ namespace Assignment_1_OOP_Demo
             Admin = 10 , Viwer = 20 , Editor = 30
         }
         [Flags]
-        enum Pirmisions
+        enum Permissions
         {
             Delete = 1 , Excute = 2 , Read= 4 , Write = 8
         }
@@ -304,7 +304,32 @@ namespace Assignment_1_OOP_Demo
             //{
             //    Console.WriteLine("Winter : December to February");
             //}
-           
+
+
+            #endregion
+
+            #region Q3
+            //Permissions permissions = Permissions.Delete;
+            //Console.WriteLine($"The permissions old is : {permissions}");
+            //Console.WriteLine(" ");
+            //permissions = permissions | Permissions.Excute;
+            //permissions = permissions | Permissions.Read;
+            ////permissions = permissions | Permissions.Write;
+            //Console.WriteLine($"The all permissions added is : {permissions}");
+            //if ((permissions & Permissions.Write) == Permissions.Write) 
+            //{
+            //    Console.WriteLine(" ");
+            //    Console.WriteLine("the permissions Write is find");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(" ");
+            //    Console.WriteLine("User does not have Write permission.");
+
+            //    permissions = permissions ^ Permissions.Write;
+            //}
+            //Console.WriteLine(" ");
+            //Console.WriteLine($"The all permissions added After check and added : {permissions}");
 
             #endregion
             #endregion
